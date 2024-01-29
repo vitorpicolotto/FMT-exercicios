@@ -1,0 +1,31 @@
+.objetivos{
+    background-color: var(--cor-principal-dois);
+    color: var(--cor-fonte);
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.objetivos__titulo{
+    font-size: 2.5em;
+    font-weight: 600;
+    
+}
+
+.objetivos__texto{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+.objetivos__lista{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 3rem;
+}
