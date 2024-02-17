@@ -1,0 +1,11 @@
+:root{
+    --cor-principal: #0B2447; /* https://colorhunt.co/palette/0b244719376d576cbca5d7e8 */
+    --cor-principal-dois: #19376D;
+    --cor-secundaria: #576CBC;
+    --cor-fonte: #A5D7E8;
+    --fonte-principal: 'Exo 2', sans-serif;
+}
+
+body{
+    font-family: var(--fonte-principal);
+}

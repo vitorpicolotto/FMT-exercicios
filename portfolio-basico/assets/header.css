@@ -1,0 +1,38 @@
+
+.cabecalho{
+    background-color: var(--cor-principal-dois);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho .cabecalho__titulo{
+    color: var(--cor-fonte);
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 6rem;
+    padding: 1rem 6rem;
+}
+
+.cabecalho .cabecalho__menu{
+    display: flex;
+    gap: 3rem;
+    margin-right: 1rem;
+    padding-right: 6rem;
+}
+
+.cabecalho .cabecalho__menu__botao{
+    background-color: transparent;
+    border: none;
+    color: var(--cor-fonte);
+    font-family: var(--fonte-principal);
+    font-size: 28px;
+    cursor: pointer;
+    text-decoration: none;  
+}
+
+#cabecalho:hover{
+    background-color: var(--cor-secundaria);
+    transition: 0.4s;
+}
+
