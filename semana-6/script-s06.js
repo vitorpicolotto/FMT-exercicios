@@ -9,8 +9,10 @@ const corAtual = mudarCorDoTexto.style.color;
 
 mudarCorDoTexto.addEventListener('mouseover',  () => {
     mudarCorDoTexto.style.color='orange';
+    console.log("A cor deve ficar laranja!")
 })
 
 mudarCorDoTexto.addEventListener( 'mouseout' , ()=>{
     mudarCorDoTexto.style.color=corAtual;
+    console.log("A cor voltou a padrão!")
 })

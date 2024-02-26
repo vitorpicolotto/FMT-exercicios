@@ -27,6 +27,11 @@
     font-size: 1.2rem;
 }
 
+.cabecalho__sobre:hover{
+    text-decoration: underline;
+    color: var(--cor-primaria);
+}
+
 .conteudo{
     background-color: var(--cor-primaria);
     color: var(--cor-fonte);
