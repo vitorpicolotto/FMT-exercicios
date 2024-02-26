@@ -1,0 +1,1 @@
+alert("Bem-vindo(a) ao perfil do Cenoura no CatBook, a rede social para gatos!")
