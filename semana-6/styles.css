@@ -1,0 +1,26 @@
+:root{
+    --fonte-principal:  'Roboto', sans-serif;
+    --fonte-secundaria:  'Open Sans', sans-serif;
+    --cor-primaria: #436850;
+    --cor-secundaria: #ADBC9F;
+    --cor-fonte: #FBFADA;
+}
+
+.cabecalho{
+    background-color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-fonte);
+
+}
+
+.conteudo{
+    background-color: var(--cor-primaria);
+    color: var(--cor-fonte);
+    font-family: var(--fonte-principal);
+}
+
+.rodape{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fonte);
+    font-family: var(--fonte-secundaria);
+}
