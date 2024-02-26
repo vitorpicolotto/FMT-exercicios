@@ -88,6 +88,10 @@ img{
     font-weight: 600;
 }
 
+.rodape__links-link:hover{
+    color: var(--cor-fonte)
+}
+
 @media (min-width: 1800px) {
     img{
         width: 600px;
