@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Loja FMT</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="./imgs/game.png" alt="Controle de video-game">
+        <h1 id="cabecalho__titulo">FMT Game Store</h1>
+        
+    </header>
+
+    <main class="principal">
+        <section class="principal__busca">
+            <h1 class="principal__titulo">Bem-vindo(a) a melhor loja de jogos de Floripa!</h1>
+            <div class="principal__form">
+                <form id="formulario">
+                    <input type="text" class="formulario__pesquisa" id="pesquisa" placeholder="Qual jogo você está buscando?">
+                    <button class="formulario__botao" type="submit">Buscar</button>
+                </form>
+            </div>
+            
+            <div class="principal__jogos">
+            
+            </div>
+
+            <button class="principal__botao" type="submit">Comprar</button>
+
+        </section>
+        <section class="principal__carrinho">
+            <h2>Carrinho</h2>
+            <div id="carrinho-conteudo">
+                <p id="carrinho-jogo"></p>
+                <p id="valor-compra">Total: </p>
+            </div>
+            <button class="carrinho__botao">Finalizar compra</button>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <h3 class="rodape__texto">Criado por Vitor Picolotto - Floripa Mais Tec - FuturoDEV [Turma ECO]</h3>
+        <div class="rodape__links">
+            <a href="https://www.linkedin.com/in/vitor-picolotto/" class="rodape__links-link" target="_blank">LinkedIn</a>
+            <a href="https://github.com/vitorpicolotto" class="rodape__links-link" target="_blank">GitHub</a>
+         </div>
+    </footer>
+    
+</body>
+
+<script src="script.js"></script>
+</html>
