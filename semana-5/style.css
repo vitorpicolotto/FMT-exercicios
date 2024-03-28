@@ -46,6 +46,10 @@
     padding-right: 15rem;
 }
 
+#carrinho{
+    font-size: 1.1rem;
+}
+
 .carrinho__botao{
     height: 30px;
     width: 10vw;

@@ -27,5 +27,30 @@ function  buscaValor() {
 
 //Exercicio 3: adicionar um evento de clique no botão comprar. O objetivo é que as informações do jogo apareçam na área do carrinho.
 //precisa criar um array vazio para o carrinho e dar push para inserir os dados nele
+//carrinho-jogo
+
+const carrinho = [];
+
+function comprarJogo(jogoNome){
+    const jogoEncontrado = jogos.find((element) => element.Jogo === jogoNome);
+    if (jogoEncontrado) {
+        carrinho.push({ Jogo: jogoEncontrado.Jogo, Valor: jogoEncontrado.Valor });
+        alert(`"${jogoEncontrado.Jogo}" adicionado ao carrinho!`);
+    } else {
+        alert("Esse jogo não existe! Tente outro nome.");
+    }
+};
+
+const botaoComprar = document.getElementById("principal__botao");
+botaoComprar.addEventListener('click', function(evento) {
+    evento.preventDefault();
+    const jogoNome = document.getElementById("pesquisa").value;
+    comprarJogo(jogoNome);
+});
+
+console.log(carrinho);
+
+
+
 
 
