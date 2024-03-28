@@ -60,18 +60,18 @@
     font-size: 1.2rem;
 }
 
-.formulario__botao{
+#formulario__botao{
     height: 30px;
-    width: 3vw;
+    width: 10vw;
     font-size: 1.2rem;
     cursor: pointer;
     transition: .3s ease all;
 
 }
 
-.principal__botao{
+#principal__botao{
     height: 30px;
-    width: 3vw;
+    width: 10vw;
     font-size: 1.2rem;
     cursor: pointer;
     transition: .3s ease all;
