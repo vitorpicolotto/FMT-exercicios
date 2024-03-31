@@ -1,6 +1,6 @@
 //App.jsx é onde tudo vai funcionar, então é necessário associar todos os componentes utilizados lá!
 
-export default function Card({titulo, subtitulo = "qualquer titulo ou até vazio"}){
+export default function Card(){
 
     return(
         <>

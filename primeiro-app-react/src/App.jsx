@@ -3,14 +3,14 @@ import CardUsuario from "./components/CardUsuario";
 
 //cada arquivo .jsx é um componente React
 
-function App() {
+export default function App() {
   //bloco superior - é onde vão as variáveis e funções - JS
-  // const titulo = "Curso React"
-  // const subtitulo = "Aprender React com a gente!"
+  const titulo = "Curso React"
+  const subtitulo = "Aprender React é com a gente!"
 
-  // function mensagemBoasVindas(){
-  //   alert("Bem vindo!")
-  // }
+  function mensagemBoasVindas(){
+    alert("Bem vindo!")
+  }
 
   const listaUsuarios = [{
     nome: "Vitor",
@@ -59,4 +59,4 @@ function App() {
 
 }
 
-export default App
+
