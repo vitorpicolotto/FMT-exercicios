@@ -42,12 +42,17 @@
     align-items: top;
 }
 
-.principal__carrinho{
-    padding-right: 15rem;
+.principal__lista-jogos{
+    font-size: 1rem;
 }
 
-#carrinho{
-    font-size: 1.1rem;
+.principal__carrinho{
+    padding-right: 15rem;
+
+}
+
+#div-carrinho{
+    font-size: 1.3rem;
 }
 
 .carrinho__botao{
