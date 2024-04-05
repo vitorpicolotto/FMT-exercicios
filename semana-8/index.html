@@ -3,45 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semana 6</title>
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <title>Exercícios - Semana 8</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <h2 class="cabecalho__titulo">CatBook - A rede social dos felinos</h2>
-        <a href="#" class="cabecalho__sobre">Sobre</a>    
+    <header id="cabecalho" class="cabecalho">
+        <h1 class="cabecalho-titulo">Exercícios da Semana 8</h1>
     </header>
-    <main class="conteudo">
-        <div class="conteudo__imagem">
-            <img src="img/cenoura.jpg" alt="Gato laranja, o Cenoura, em cima da mesa" width="400px" height="430px">
+
+    <main id="principal" class="container">
+        <h2 id="subtitulo-principal" class="container-subtitulo">Vamos começar os exercicios</h2>
+        <div>
+             <span id="muda-cor" >Elemento para mudar a cor</span>
+             <button onclick="mudarCor()">Mudar Cor</button>
         </div>
-        <div class="conteudo__texto">
-            <h1 class="conteudo__titulo">Meu perfil</h1>
-            <ul class="conteudo__lista">
-                <li>Nome: 
-                    <b>Cenoura</b>
-                </li>
-                <li>Idade: 
-                    <b>7 anos</b>
-                </li>
-                <li>Raça:
-                    <b>SRD (Macho)
-                </li>
-                <li id="cor">Cor: 
-                    <b>Laranja</b>
-                </li>
-            </ul>
-         </div>
+        <div class="ex2">
+            <p class="mudar-texto">Clicando no botão abaixo, você vai saber uma verdade!</p>
+            <button onclick="alterarTexto()">Alterar o texto</button>
+        </div>
+        <div>
+            <h2>O que acha de adicionarmos mais uma verdade por aqui?</h2>
+            <p id="add-item"></p>
+            <button onclick="adicionarItem()">Adicionar verdade</button>
+            <button onclick="removerItem()">A verdade é dura, exclua por favor!</button>
+
+        </div>
+
     </main>
-    <footer class="rodape">
-        <h3 class="rodape__texto">Criado por Vitor Picolotto - Floripa Mais Tec - FuturoDEV [Turma ECO]</h3>
-        <div class="rodape__links">
-            <a href="https://www.linkedin.com/in/vitor-picolotto/" class="rodape__links-link" target="_blank">LinkedIn</a>
-            <a href="https://github.com/vitorpicolotto" class="rodape__links-link" target="_blank">GitHub</a>
-         </div>
-    </footer> 
+    
 </body>
 
-<script src="script-s06.js"></script>
+<script src="script.js"></script>
 </html>
