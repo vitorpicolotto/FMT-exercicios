@@ -32,6 +32,17 @@
 .ex2{
     display: flex;
     align-items: center;
-    padding: 1rem;
+    margin-top: 20px;
+    padding: 0.5rem;
     justify-content: space-around;
+    cursor: pointer;
+    background-color: green;
+}
+
+
+#caixa-mudar-tudo{
+    background-color: blueviolet;
+    color: white;
+    padding: 0.5rem;
+    border: 2px dashed white;
 }
