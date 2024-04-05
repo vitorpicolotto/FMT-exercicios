@@ -1,0 +1,30 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    height: 100vh;
+}
+
+.cabecalho{grid-area: 1 / 1 / 2 / 6;}
+.sidebar{grid-area: 2 / 1 / 6 / 2;}
+.content{grid-area: 2 / 2 / 6 / 6;}
+
+.cabecalho{
+    text-align: center;
+    color: antiquewhite;
+    background-color: blue;
+    font-size: 5rem;
+}
+
+.sidebar{
+    background-color: aqua;
+    font-size: 2rem;
+}
+
+.content{
+    background-color: blueviolet;
+    font-size: 3rem;
+}
