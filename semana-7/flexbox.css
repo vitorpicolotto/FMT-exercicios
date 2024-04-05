@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.cabecalho{
+    padding: 0.5rem;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    background-color: blue;
+    height: 10vh;
+}
+
+.principal{
+    display: flex;
+}
+
+.sidebar{
+    background-color: aqua;
+    height: 90vh;
+    width: 20vw;
+    font-size: 2rem;
+}
+
+.content{
+    background-color: blueviolet;
+    width: 80vw;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
