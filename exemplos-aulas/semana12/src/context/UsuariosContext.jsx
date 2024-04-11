@@ -1,13 +1,18 @@
 /* 
 Passo a passo:
-1. [x] - CRIE O ARQUIVO DO CONTEXTO NA PASTA CONTEXT (SRC)
-2. [x] - IMPORTAR O createContext DO REACT - SERVE PARA CRIAR O CONTEXTO
-3. [x] - CRIAR O CONTEXTO USANDO A FUNCÇÃO createContext() - const com o mesmo nome do arquivo
-4. [X] - EXPORTAR A VARIÁVEL DO CONTEXTO - não usa o default porque vai ter mais de uma coisa pra exportar no contexto
-5. [] - CRIE O PROVIDER
-6. [] - DEFINA OS DADOS GLOBAIS
-7. [] - CRIE O RETURN DO PROVIDER PASSANDO OS DADOS GLOBAIS DENTRO DA PROPS 'VALUE'
-8. [] - EXPORTE O PROVIDER
+ * 1 - [] - IMPORTE O createContext DO REACT
+ * 2 - [] - CRIAR A VARIÁVEL DO CONTEXTO
+ * 3 - [] - EXPORTAR A VARIÁVEL DO CONTEXTO
+* 
+ * 4 - [] - CRIE A VARIÁVEL DO PROVIDER
+ * 5 - [] - RECEBA A PROP CHILDREN
+ * 6 - [] - DEFINA OS DADOS GLOBAIS
+ * 7 - [] - CRIE O JSX DO PROVIDER E PASSE OS DADOS GLOBAIS NA PROP value
+ * 8 - [] - IMPORTE O PROVIDER NO ARQUIVO APP.JSX
+* 
+ * 9 - [] - IMPORTE O CONTEXTO NO ARQUIVO QUE FOR UTILIZAR
+ * 10 - [] - IMPORTE O useContext DO REACT
+ * 11 - [] - RECEBA OS DADOS GLOBAIS USANDO O useContext
 */
 
 import { createContext, useState } from "react";
@@ -20,6 +25,14 @@ export const UsuariosContextProvider = ({children}) => {
     {
         nome: "Vitor",
         email: "vitor@email.com"
+    },
+    {
+        nome: "Gelson",
+        email: "gp@email.com"
+    },
+    {
+        nome: "André",
+        email: "ap@email.com"
     }
 
     ])
