@@ -1,39 +1,28 @@
-import { useState } from "react";
+
 import styles from "./Cadastro.module.css"
-import {TextField, Button} from  "@mui/material";
+import {useContext} from "react"
+import {UsuariosContext} from "../context/UsuariosContext"
+import FormCadastroUsuario from "../components/molecules/FormCadastroUsuario"
+
+
 
 
 function Cadastro(){
    
-    
-    const [novoUsuario, setNovoUsuario] = useState({
-        nome:"",
-        email:""
-    })
+    const {usuarios, setUsuarios} = useContext(UsuariosContext)  //com chaves porque é uma lista?
 
+ 
+
+    function AdicionarUsuarios(){
+        setUsuarios([...usuarios, novoUsuario])
+    }
+        //... é para manter os usuários já cadastrados
   
     return (
         <div className={styles.card}>
             <h1 className={styles.titulo}>Cadastro</h1>
-
-            <h4>{novoUsuario.nome}</h4>
-            <h4>{novoUsuario.email}</h4>
-
-            <TextField 
-            label="Nome" 
-            variant="outlined" 
-            margin="dense"
-            onChange={(evento) => setNovoUsuario({...novoUsuario,nome: evento.target.value})} 
-            />
-
-            <TextField 
-            label="Email" 
-            variant="outlined" 
-            margin="dense"
-            onChange={(evento) => setNovoUsuario({...novoUsuario,email: evento.target.value})}
-            />
-
-            <Button variant="contained" size="small">Cadastrar</Button>
+            <FormCadastroUsuario submit={AdicionarUsuarios} />
+            
         </div>
 
     );

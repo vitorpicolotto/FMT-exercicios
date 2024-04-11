@@ -1,20 +1,18 @@
-import {Button, Card, CardContent, Typography} from "@mui/material"
+import {useContext} from "react"
+import {UsuariosContext} from "../context/UsuariosContext"
 
 
 function Lista(){
-
+    const {usuarios, setUsuarios} = useContext(UsuariosContext)
 
     return (
         <div>
             <h1>Página Lista</h1>
-            <Button variant="contained" color="secondary" size="small">Clique</Button>
-            <br/>
-            <Typography variant="subtitle1">VPzada</Typography>
-            <Card>
-                <CardContent>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, earum maxime, nihil ducimus unde maiores aut ad error vitae, soluta veniam autem mollitia quae hic. Totam rerum numquam veritatis quisquam.</p>
-                </CardContent>
-            </Card>
+            {usuarios.map((usuario, index) => {
+        return (
+            <h3 key={index}>{usuario.nome}</h3>
+        )
+      })}
 
         </div>
 
