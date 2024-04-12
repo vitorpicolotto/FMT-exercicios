@@ -1,32 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Entrar</title>
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <div class="container">
-        <h1>Sign In to this session</h1>
-        <div class="sign-in-container">
+        <section>
+            <h1 class="container-titulo">Entre ou cadastre-se no <b class="container-titulo-bold">Orkut Mais Tec</b> </h1>
+            <div class="register-container">
+                <p>Se você não tem uma conta, <a href="#">registre-se aqui</a></p>
+            </div>
+        </section>
+        
+        <section class="sign-in-container">
             <form id="sign-in-form">
-                <label for="email">Email address</label>
+                <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" required>
-                <label for="password">Password</label>
+                <label for="password">Senha</label>
                 <input type="password" id="password" name="password" required>
-                <button type="submit">Sign In</button>
+                <button type="submit">Entrar</button>
             </form>
             <div class="options">
-                <a href="#">Forgot password?</a>
-                <button id="google-sign-in">Continue with Google</button>
-                <button id="facebook-sign-in">Continue with Facebook</button>
+                <a href="#">Esqueceu sua senha?</a>
+                <button id="google-sign-in">Continuar com Google</button>
+                <button id="facebook-sign-in">Continuar com Facebook</button>
             </div>
-        </div>
-        <div class="register-container">
-            <p>If you don't have an account, <a href="#">Register here!</a></p>
-        </div>
+        </section>
     </div>
-    <script src="scripts.js"></script>
+
 </body>
 </html>
