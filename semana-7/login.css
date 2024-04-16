@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Quicksand", sans-serif;
     background-color: #f36767ff;
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: "Quicksand", sans-serif;
+    
 }
 
 .texto-container{
@@ -93,9 +93,9 @@ body {
 .options-buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     padding: 10px;
+    margin: 10px;
 }
 
 .options a {
@@ -116,5 +116,5 @@ body {
 
 .options button:hover {
     background-color:rgb(237, 126, 126);
-    color: #ffffff;;
+    color: #ffffff;
 }

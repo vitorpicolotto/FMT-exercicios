@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>Cadastro</title>
 </head>
 <body>
-    <h1>cadastro</h1>
+    <div class="container">
+		<section class="container-infos">
+            <h1 class="titulo-container">Criar uma conta</h1>
+		    <p class="container-texto">O <b class="container-texto-b">Orkut Mais Tec</b> é gratuito!</p>
+            <img src="./assets/man_cadastro.png" width="50%" alt="Homem usando notebook">
+        </section>
+		<form class="formulario">
+			<label for="fullname">Nome completo</label>
+			<input type="text" id="fullname" name="fullname" required>
+			<label for="username">Nome do usuário</label>
+			<input type="text" id="username" name="username" required>
+			<label for="email">E-mail</label>
+			<input type="email" id="email" name="email" required>
+			<label for="password">Senha</label>
+			<input type="password" id="password" name="password" required>
+			<label for="phone">Número de telefone</label>
+			<input type="tel" id="phone" name="phone" required>
+            <button class="button-submit">Cadastrar</button>
+            <p>Já tem uma conta? <a class="link-login" href="login.html">Login</a></p>
+		</form>
+	</div>
 </body>
 </html>
